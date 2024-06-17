@@ -28,7 +28,7 @@ Users should be able to:
 ### Screenshot
 
 <img src="./images/mobile.png" alt="Mobile Screenshot" width="200"/>
-<img src="./images/desktop.png" alt="Desktop Screenshot" width="200"/>
+<img src="./images/desktop.png" alt="Desktop Screenshot" height="300"/>
 
 ### Links
 
