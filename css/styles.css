@@ -20,11 +20,14 @@ body {
     background-color: hsl(217, 19%, 24%);
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: visible;
 }
 
 .advice-card {
     max-width: 450px;
     margin: 0 auto;
+    padding: 1rem 1.5rem;
 }
 
 .advice-number {
@@ -41,9 +44,20 @@ body {
     color: hsl(150, 100%, 66%);
 }
 
+.divider {
+    margin-bottom: 2rem;
+}
+
+.desktop-divider {
+    display: none;
+}
+
 .dice-container {
     display: flex;
     justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: -30px; 
 }
 
 #dice-button {
@@ -52,11 +66,13 @@ body {
     padding: 1rem;
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
 }
 
 #dice-button:hover {
     transform: rotate(90deg);
+    box-shadow: 0 0 20px 10px hsl(150, 100%, 66%);
 }
 
 @media (max-width: 375px) {
@@ -66,5 +82,23 @@ body {
 
     .advice-text {
         font-size: 24px;
+    }
+
+    .desktop-divider {
+        display: none;
+    }
+
+    .mobile-divider {
+        display: block;
+    }
+}
+
+@media (min-width: 376px) {
+    .mobile-divider {
+        display: none;
+    }
+
+    .desktop-divider {
+        display: block;
     }
 }
