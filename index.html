@@ -12,30 +12,29 @@
   <title>Advice #117</title>
 </head>
 <body>
-  <div class="container">
-    <div class="advice-card" id="advice-card">
-      <p class="advice-number">Advice #<span id="advice-id">117</span></p>
-      <blockquote class="advice-text" id="advice-text">
-        “It is easy to sit up and take notice, what’s difficult is getting up
-        and taking action.”
-      </blockquote>
+  <main>
+    <div class="container">
+      <div class="advice-card" id="advice-card" aria-live="polite">
+        <p class="advice-number">Advice #<span id="advice-id">117</span></p>
+        <blockquote class="advice-text" id="advice-text">
+          “It is easy to sit up and take notice, what’s difficult is getting up
+          and taking action.”
+        </blockquote>
+      </div>
+      <picture>
+        <source
+          srcset="images/pattern-divider-desktop.svg"
+          media="(min-width: 376px)"
+        />
+        <img src="images/pattern-divider-mobile.svg" alt="" class="divider" />
+      </picture>
+      <div class="dice-container">
+        <button id="dice-button" aria-label="Get new advice">
+          <img src="images/icon-dice.svg" alt="Dice Icon" />
+        </button>
+      </div>
     </div>
-    <img
-      src="images/pattern-divider-desktop.svg"
-      alt="Divider"
-      class="divider desktop-divider"
-    />
-    <img
-      src="images/pattern-divider-mobile.svg"
-      alt="Divider"
-      class="divider mobile-divider"
-    />
-    <div class="dice-container">
-      <button id="dice-button">
-        <img src="images/icon-dice.svg" alt="Dice Icon" />
-      </button>
-    </div>
-  </div>
+  </main>
   <script src="index.js"></script>
 </body>
 </html>
