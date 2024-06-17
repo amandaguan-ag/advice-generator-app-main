@@ -28,6 +28,7 @@ body {
     max-width: 450px;
     margin: 0 auto;
     padding: 1rem 1.5rem;
+    position: relative;
 }
 
 .advice-number {
@@ -45,7 +46,8 @@ body {
 }
 
 .divider {
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
+    display: block;
 }
 
 .desktop-divider {
@@ -58,6 +60,8 @@ body {
     position: absolute;
     width: 100%;
     bottom: -30px; 
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #dice-button {
