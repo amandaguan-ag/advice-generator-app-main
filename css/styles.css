@@ -12,6 +12,16 @@ body {
     font-family: "Manrope", sans-serif;
     background-color: hsl(218, 23%, 16%);
     color: white;
+    margin-block: 1rem; 
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    margin: auto;
 }
 
 .container {
@@ -21,9 +31,10 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     position: relative;
-    overflow: visible;
+    overflow: hidden;
     margin: 0 auto;
     max-width: 90%;
+    max-height: calc(100vh - 4rem);
 }
 
 .advice-card {
@@ -87,14 +98,6 @@ body {
 img, picture {
     display: block;
     max-width: 100%;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    width: 100%;
 }
 
 footer {
