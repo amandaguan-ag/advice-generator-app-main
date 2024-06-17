@@ -34,7 +34,7 @@ body {
 }
 
 .advice-number {
-    color: hsl(193, 38%, 86%);
+    color: hsl(150, 100%, 66%);
     font-size: 1rem;
     letter-spacing: 0.1rem;
     margin-bottom: 1rem;
@@ -44,7 +44,7 @@ body {
     font-size: 28px;
     font-weight: 800;
     margin-bottom: 2rem;
-    color: hsl(150, 100%, 66%);
+    color: hsl(193, 38%, 86%);
 }
 
 .divider {
@@ -76,8 +76,7 @@ body {
     position: relative;
 }
 
-#dice-button:hover {
-    transform: rotate(90deg);
+#dice-button:active {
     box-shadow: 0 0 20px 10px hsl(150, 100%, 66%);
 }
 
