@@ -10,7 +10,7 @@ document.getElementById("dice-button").addEventListener("click", function () {
       ) {
         document.getElementById("advice-id").textContent =
           adviceSlip.slip_id || adviceSlip.id;
-        document.getElementById("advice-text").textContent = adviceSlip.advice;
+        document.getElementById("advice-text").textContent = `"${adviceSlip.advice}"`; 
       } else {
         console.error(
           "Error: slip_id or advice not found in the response",
