@@ -78,7 +78,8 @@ body {
     position: relative;
 }
 
-#dice-button:active {
+#dice-button:hover {
+    transform: rotate(90deg);
     box-shadow: 0 0 20px 10px hsl(150, 100%, 66%);
 }
 
